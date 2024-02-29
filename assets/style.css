@@ -1,0 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+
+:root{
+    --bg-color-one:#117050;
+}
+
+*{
+    margin: 0%;
+    padding: 0%
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+header .line{
+    background: var(--bg-color-one);
+    height: 10px;
+}
