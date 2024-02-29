@@ -4,7 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
 
 :root{
-    --bg-color-one:#117050;
+    --bkg-color-one:#117050;
+    /* -------------------------- */
+    --border-color-one:#999999;
+    /* -------------------------- */
 }
 
 *{
@@ -17,6 +20,64 @@ body{
 }
 
 header .line{
-    background: var(--bg-color-one);
+    background: var(--bkg-color-one);
     height: 10px;
+}
+
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+
+.header--area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    
+}
+
+.header-left img{
+    width: 64px;
+    height: 64px;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+}
+
+.header--search form{
+    display: flex;
+}
+
+.header--search input{
+    font-size: 16px;
+    padding: 8px 15px;
+    border: 1px solid var(--border-color-one);
+    outline: 0;
+    width: 100%;
+    max-width: 250px;
+}
+
+.header--search button{
+    border: 0;
+    background: transparent;
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.header--search button img{
+    width: 16px;
+    height: 16px;
+}
+
+.header--menu{
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.header--menu img{
+    width: 24px;
+    height: 24px;
 }
