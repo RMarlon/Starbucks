@@ -1,12 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Oswald:wght@200..700&display=swap');
 
 :root{
     --bkg-color-one:#117050;
     /* -------------------------- */
     --border-color-one:#999999;
+    --border-color-two:#117050;
     /* -------------------------- */
 }
 
@@ -80,4 +80,33 @@ header .line{
 .header--menu img{
     width: 24px;
     height: 24px;
+}
+
+.banner{
+    background: url(/assets/images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.banner h1{
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 90px;
+    margin: 0%;
+    margin-bottom: 30px;
+}
+
+.banner--images{
+    margin-top: 60px;
+}
+
+.banner--images img{
+    width: 148px;
+    height: 148px;
+    margin-right: 40px;
+    border-radius: 50%;
+    border: 6px solid var(--border-color-two);
 }
