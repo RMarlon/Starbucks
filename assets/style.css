@@ -1,57 +1,56 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Oswald:wght@200..700&display=swap');
 
-:root{
-    --bkg-color-one:#117050;
+:root {
+    --bkg-color-one: #117050;
     /* -------------------------- */
-    --border-color-one:#999999;
-    --border-color-two:#117050;
+    --border-color-one: #999999;
+    --border-color-two: #117050;
     /* -------------------------- */
 }
 
-*{
+* {
     margin: 0%;
     padding: 0%
 }
 
-body{
+body {
     font-family: "Open Sans", sans-serif;
 }
 
-header .line{
+header .line {
     background: var(--bkg-color-one);
     height: 10px;
 }
 
-.container{
+.container {
     max-width: 1140px;
     margin: auto;
 }
 
-.header--area{
+.header--area {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    
+
 }
 
-.header-left img{
+.header-left img {
     width: 64px;
     height: 64px;
 }
 
-.header-right{
+.header-right {
     display: flex;
     align-items: center;
 }
 
-.header--search form{
+.header--search form {
     display: flex;
 }
 
-.header--search input{
+.header--search input {
     font-size: 16px;
     padding: 8px 15px;
     border: 1px solid var(--border-color-one);
@@ -60,29 +59,29 @@ header .line{
     max-width: 250px;
 }
 
-.header--search button{
+.header--search button {
     border: 0;
     background: transparent;
     margin-left: -30px;
     cursor: pointer;
 }
 
-.header--search button img{
+.header--search button img {
     width: 16px;
     height: 16px;
 }
 
-.header--menu{
+.header--menu {
     margin-left: 50px;
     cursor: pointer;
 }
 
-.header--menu img{
+.header--menu img {
     width: 24px;
     height: 24px;
 }
 
-.banner{
+.banner {
     background: url(/assets/images/bg.jpg);
     background-position: center;
     background-size: cover;
@@ -90,7 +89,7 @@ header .line{
     padding-bottom: 90px;
 }
 
-.banner h1{
+.banner h1 {
     font-family: "Oswald", sans-serif;
     font-weight: bold;
     font-size: 90px;
@@ -99,14 +98,31 @@ header .line{
     margin-bottom: 30px;
 }
 
-.banner--images{
+.banner--images {
     margin-top: 60px;
 }
 
-.banner--images img{
+.banner--images img {
     width: 148px;
     height: 148px;
     margin-right: 40px;
     border-radius: 50%;
     border: 6px solid var(--border-color-two);
+}
+
+.area1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.area1--content {}
+
+.area1--img1 {
+    background: green;
+}
+
+.area1--img2 {
+    background: rebeccapurple;
+    grid-column: 2/3;
+    grid-row: 1/3;
 }
