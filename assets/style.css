@@ -5,6 +5,7 @@
     --bkg-color-one: #117050;
     --bkg-color-two: #454545;
     --bkg--color-three: #e8e9ee;
+    --bkg--color-four:#333;
     /* -------------------------- */
     --border-color-one: #999999;
     --border-color-two: #117050;
@@ -250,5 +251,18 @@ header .line {
     background-image: url(/assets/images/bg3.jpg);
     background-position: left ;
     margin-left: 350px;
+}
 
+.area5{
+    background-image: url(/assets/images/bg4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+}
+
+footer{
+    background: var(--bkg--color-four);
+    color: var(--color-two);
+    padding: 80px;
+    text-align: center;
 }
