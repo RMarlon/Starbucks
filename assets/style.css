@@ -4,6 +4,7 @@
 :root {
     --bkg-color-one: #117050;
     --bkg-color-two: #454545;
+    --bkg--color-three: #e8e9ee;
     /* -------------------------- */
     --border-color-one: #999999;
     --border-color-two: #117050;
@@ -228,4 +229,26 @@ header .line {
     background-image: url(/assets/images/f5.jpg);
     background-size: cover;
     background-position: center;
+}
+
+.area4{
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    background: var(--bkg--color-three);
+}
+
+.area4--content{
+    padding: 150px 80px ;
+}
+
+.area4--text{
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.area4--img1 {
+    background-image: url(/assets/images/bg3.jpg);
+    background-position: left ;
+    margin-left: 350px;
+
 }
