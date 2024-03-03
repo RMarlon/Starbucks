@@ -5,14 +5,14 @@
     --bkg-color-one: #117050;
     --bkg-color-two: #454545;
     --bkg--color-three: #e8e9ee;
-    --bkg--color-four:#333;
+    --bkg--color-four: #333;
     /* -------------------------- */
     --border-color-one: #999999;
     --border-color-two: #117050;
     --border-color-three: #454545;
     /* -------------------------- */
     --color-one: #454545;
-    --color-two:#FFF;
+    --color-two: #FFF;
 }
 
 * {
@@ -29,13 +29,13 @@ body {
     margin: auto;
 }
 
-.bar{
+.bar {
     width: 168px;
     height: 22px;
     background: var(--bkg-color-one);
 }
 
-h1{
+h1 {
     font-family: "Oswald", sans-serif;
     font-weight: bold;
     font-size: 90px;
@@ -44,7 +44,7 @@ h1{
     margin-bottom: 30px;
 }
 
-h2{
+h2 {
     font-family: "Oswald", sans-serif;
     font-weight: bold;
     font-size: 35px;
@@ -52,7 +52,7 @@ h2{
     margin: 20px 0;
 }
 
-.button{
+.button {
     display: inline-block;
     border: 2px solid var(--border-color-three);
     padding: 10px 30px;
@@ -61,7 +61,7 @@ h2{
     text-decoration: none;
 }
 
-.button:hover{
+.button:hover {
     color: var(--color-two);
     background: var(--bkg-color-two);
 }
@@ -154,11 +154,11 @@ header .line {
     padding: 80px;
 }
 
-.area1--quote{
+.area1--quote {
     margin-bottom: 30px;
 }
 
-.area1--text{
+.area1--text {
     margin-bottom: 50px;
     line-height: 25px;
 }
@@ -188,7 +188,7 @@ header .line {
 }
 
 
-.area2--text{
+.area2--text {
     margin-bottom: 50px;
     line-height: 25px;
 }
@@ -221,7 +221,7 @@ header .line {
 }
 
 
-.area3--text{
+.area3--text {
     margin-bottom: 50px;
     line-height: 25px;
 }
@@ -232,37 +232,116 @@ header .line {
     background-position: center;
 }
 
-.area4{
+.area4 {
     display: grid;
     grid-template-columns: 450px 1fr;
     background: var(--bkg--color-three);
 }
 
-.area4--content{
-    padding: 150px 80px ;
+.area4--content {
+    padding: 150px 80px;
 }
 
-.area4--text{
+.area4--text {
     margin-bottom: 50px;
     line-height: 25px;
 }
 
 .area4--img1 {
     background-image: url(/assets/images/bg3.jpg);
-    background-position: left ;
+    background-position: left;
     margin-left: 350px;
 }
 
-.area5{
+.area5 {
     background-image: url(/assets/images/bg4.jpg);
     background-size: cover;
     background-position: center;
     height: 1000px;
 }
 
-footer{
+footer {
     background: var(--bkg--color-four);
     color: var(--color-two);
     padding: 80px;
     text-align: center;
+}
+
+@media (min-width:769px) and (max-width: 1140px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (min-width:426px) and (max-width:768px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .area1 {
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .area2 {
+        grid-template-columns: 2fr 3fr;
+    }
+
+    .area3 {
+        grid-template-columns: 3fr 2fr;
+    }
+}
+
+@media  (max-width:425px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header--search input {
+        max-width: 80px;
+    }
+
+    h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    h2{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .banner--images img {
+        width: 70px;
+        height: 70px;
+        border: 3px solid var(--border-color-two);
+        margin-right: 10px;
+    }
+
+    .area1, .area2, .area3, .area4 {
+        grid-template-columns: 1fr;
+    }
+
+    .area1--content, .area2--content, .area3--content, .area4--content {
+        padding: 40px;
+    }
+
+    .area1--img1 {
+        height: 150px;
+    }
+
+    .area2--img1 {
+        height: 200px;
+    }
+
+    .area5 {
+        height: 200px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 40px 20px;
+    }
+
 }
