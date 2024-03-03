@@ -126,7 +126,7 @@ header .line {
 
 
 .banner {
-    background: url(assets/images/bg.jpg);
+    background: url(.assets/images/bg.jpg);
     background-position: center;
     background-size: cover;
     padding-top: 190px;
