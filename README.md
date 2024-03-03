@@ -9,7 +9,7 @@
 
 📱
 
-<a href="https://github.com/RMarlon/Starbucks/tree/main"><img src="images/Responsit-banner.jpg"></a>
+<a href="https://github.com/RMarlon/Starbucks/tree/main"><img src="assets/images/responsitbanner.jpg"></a>
 
 ## Tools used 🛠️
 
